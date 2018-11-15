@@ -1,0 +1,21 @@
+{
+  "name": "form-utils",
+  "version": "1.0.0",
+  "description": "Chrome DevTool for inspecting Angular Forms",
+  "main": "devtools.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "clean": "fsbin emptyDir ./dist",
+    "build": "npm run clean && npm run tsc && npm run deploy",
+    "deploy": "cp ./manifest.json ./dist/ && cp ./src/*.html ./dist/ && fsbin copy ./assets/ ./dist/assets/"
+  },
+  "author": "Chris Stoy",
+  "license": "ISC",
+  "devDependencies": {
+    "fsbin": "^1.0.7",
+    "typescript": "^3.1.6"
+  }
+}
