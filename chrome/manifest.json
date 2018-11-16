@@ -10,8 +10,5 @@
     "64": "assets/icon-64.png",
     "128": "assets/icon-128.png"
   },
-  "devtools_page": "extension.html",
-  "background": {
-    "page": "background.html"
-  }
+  "devtools_page": "extension.html"
 }
