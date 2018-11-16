@@ -1,0 +1,25 @@
+<h2>First Form</h2>
+<form [formGroup]="form">
+  <div class="form-group">
+    <label>An Email: <input type="text" [formControlName]="FormControls.First" placeholder="Enter an email address"></label>
+  </div>
+
+  <div class="form-group" [formGroupName]="FormControls.Second">
+    <label>Value &ge; 10: <input type="number" [formControlName]="FormControls.Alfa"></label>
+    <label>Value &le; 10: <input type="number" [formControlName]="FormControls.Baker"></label>
+    <label>Charlie: <input type="text" [formControlName]="FormControls.Charlie" placeholder="Required"></label>
+  </div>
+
+  <div class="form-group">
+    <h3>Third:</h3>
+    <label>Red
+      <input type="radio" value="red" [formControlName]="FormControls.Third">
+    </label>
+    <label>White
+      <input type="radio" value="white" [formControlName]="FormControls.Third">
+    </label>
+    <label>Blue
+      <input type="radio" value="blue" [formControlName]="FormControls.Third">
+    </label>
+  </div>
+</form>
