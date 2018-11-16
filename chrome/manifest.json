@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "FormUtils",
+  "version": "1.0",
+  "author": "Chris Stoy",
+  "description": "View state of Angular Form controls",
+  "icons": {
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "64": "assets/icon-64.png",
+    "128": "assets/icon-128.png"
+  },
+  "devtools_page": "extension.html"
+}

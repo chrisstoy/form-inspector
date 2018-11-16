@@ -1,0 +1,17 @@
+.form-group {
+  margin: 1rem;
+  border: thin solid whitesmoke;
+  padding: 1rem;
+}
+
+.ng-invalid {
+  outline: 1px dashed red;
+}
+
+.ng-valid {
+  outline: 1px solid green;
+}
+
+.form-group label {
+  margin-right: 1rem;
+}
