@@ -10,5 +10,16 @@
     "64": "assets/icon-64.png",
     "128": "assets/icon-128.png"
   },
-  "devtools_page": "extension.html"
+  "devtools_page": "devtools-page.html",
+  "background": {
+    "page": "background-page.html"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ]
 }
